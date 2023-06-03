@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Adeseyi's Mini projects</title>
+
+<style>
+@font-face {
+    font-family: inter;
+    src: url(Inter-fonts/Inter-Regular.ttf);
+}
+.Our-blog {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .blog-heading {
+            margin-bottom: 20px;
+            
+        }
+
+        .input-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0px;
+                        
+        }
+
+        .input-wrapper input{
+            height: 24px;
+            border-radius: 5px;
+            border: 2px solid #e9e9e9;
+            padding: 3px 10px;
+            font-family: inter;
+        }
+
+        .custom-button {
+            margin-left: 10px;
+            color: white;
+            background-color: #7f56d9;
+            border: none;
+            height: 33px;
+            border-radius: 5px;
+            
+        }
+
+        .privacy-text {
+            text-align: center;
+            font-family: inter;
+            font-size: 10px;
+            color: rgb(168, 165, 165);
+            padding-right: 85px;
+}
+
+    .blogPost {
+        display: grid;
+        grid-template-areas: "col1 col2"
+                             "col1 col3";
+        gap: 10px;
+        padding-left: 60px;
+       
+    }
+   
+
+    .item1{
+        grid-area: col1;
+        padding-top: 25px;
+        
+    }
+    .item2{
+        /* grid-area: col2; */
+        /* padding-top: 50px; */
+        padding-right: 50px;
+        
+    }
+    .item3{
+        /* grid-area: col3; */
+        padding-right: 50px;
+        
+    }
+    .noTitle{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    ul{
+        padding-inline-start: 0px;
+        display: inline-block;
+    }
+    
+    ul li{
+        list-style-type: none;
+        display: inline-block;
+}
+    .tag{
+
+      
+        border-radius: 20px;
+        padding: 2px 3px ;
+        font-size: 14px;
+        text-align: left;
+        
+        
+    }
+
+    .tag.designTag{
+        color: purple;
+        background-color: rgb(246, 244, 249);
+        width: 45px;
+    }
+   
+    .tag.researchTag{
+        color: rgb(106, 9, 252);
+        background-color: rgb(241, 241, 248);
+        
+    }
+   
+    .tag.presentationTag{
+        color: rgb(244, 56, 72);
+        background-color: rgb(240, 228, 231);
+    }
+   
+    .description{
+        
+        /* padding-right: 150px; */
+        /* float: right; */
+        flex: 1 1 45%;
+        margin-left: 20px;
+    }
+    .item2_img {
+        flex: 1 1 60%;
+    }
+    .item2_img img {
+        width: 100%;
+        border-radius: 3px;
+        padding-top: 25px;
+        
+    }
+
+    @media(max-width:1260px){
+        .blogPost{
+            width:300px ;
+        }
+    }
+    @media(max-width:1100px){
+        .blogPost {
+            width: 70%;
+        }
+    }
+    @media(max-width:550px){
+        .blogPost{
+            margin: 20px 10px;
+            width: 100%;
+        }
+        .blogPost{
+            padding: 20px;
+        }
+    }
+      
+   
+</style>
+
+
+</head>
+<body>
+    
+        
+            
+            <div class="Our-blog">
+                <div class="blog-heading">
+                  <h5 style="color: #7f56d9" >Our Blog</h5>
+                  <h1 style="font-family: inter;">Stories and Interviews</h1>
+          <h4 style="color: rgb(131, 126, 126);">Subscribe to learn about new product features, the latest in technology, <p>solutions, and updates.</p></h4>
+        </div>
+      </div>
+      
+            <div class="input-wrapper">
+              <input type="email" id="email" name="email" placeholder="Enter your email">
+              <label for="email"></label>
+                <button class="custom-button">Subscribe</button>
+            </div>
+            <p class="privacy-text">We care about your data in our <ins>Privacy policy.</ins></p>
+        <br>
+
+
+
+    <h2 style="padding-left: 60px;">Recent blog posts</h2>
+
+    <div class="blogPost">
+        <div class="item1"> 
+            <div><img src="Image-1.jpg" height="260px" width="95%"> </div>
+            <div>
+                <h6 style="color:#7f56d9">Olivia Rhye . 20 Jan 2022</h6>
+                <h3>UX review presentations</h3>
+                <p>How do you create compelling presentations that wow your collleagues and <br>
+                   impress your managers?
+                </p>
+            </div>
+                
+                    <ul>
+                        <li class="tag designTag">Design</li>
+                        <li class="tag researchTag">Research</li>
+                        <li class="tag presentationTag">Presetation</li>
+                    </ul>
+                
+            
+        </div>
+        
+        <div class="item2 noTitle">
+            <div class="item2_img">
+                <img src="Image 2.jpg" height="200px" width="80%">    
+            </div>
+           
+                <div class="description">
+                    <h6 style="color: #7f56d9;">Phonix Baker . 19 Jan 2022 <br> --</h6>
+                    <h3>Migrating to Linear 101</h3>
+                    <p>Linear helps streamline software <br>
+                       projects, sprints, tasks, and bug <br>
+                       tracking. Here's how to get...
+                    </p>
+
+                    <ul>
+                        <li class="tag designTag">Design</li>
+                        <li class="tag researchTag">Research</li>
+                    </ul>
+                
+                </div>
+           
+            </div>
+
+        <div class="item3 noTitle">
+            <div class="item2_img">
+                <img src="Image 3.jpg" height="200px" width="80%">    
+            </div>
+           
+                <div class="description">
+                    <h6 style="color: #7f56d9;">Lana Steiner . 18 Jan 2022 <br> --</h6>
+                    <h3>Building your API Stack</h3>
+                    <p>The rise of RESTful APIs has<br>
+                       been met by a rise in tools for  <br>
+                       creating, test, and manag...
+                    </p>
+
+                    <ul>
+                        <li class="tag designTag">Design</li>
+                        <li class="tag researchTag">Research</li>
+                    </ul>
+                
+                </div>
+           
+            </div>
+ </div>
+
+</body>
+</html>
+
